@@ -1,0 +1,67 @@
+<div *ngIf="loading">Please wait...</div>
+<div *ngIf="!loading && aboutDatas">
+  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+    <div *ngFor="let aboutData of aboutDatas" style="margin: 10px;">
+
+      <!-- <div class="card" style="padding: 5px; display: flex;flex-direction: column; align-items: center;">
+        <div style="display: flex; align-items: center; justify-content: center;margin-top: 8px;"> 
+          <img [src]="aboutData.image" alt="Image" style="width: 50px; height: 60px; z-index: 5; border-radius: 90px; margin-right: 4px;" />
+         <div>
+          <p style="margin: 0px;">{{aboutData.firstName}} {{aboutData.lastName}}</p>
+          <p style="font-size: 12px;">{{aboutData.company.title}}</p>
+         </div>
+        
+        </div>
+    
+      </div> -->
+
+      <div class="card">
+        <div style="display: flex; align-items: center;">
+          <img [src]="aboutData.image" alt="Image" style="width: 50px; height: 50px; z-index: 5; border-radius: 90px; margin-right: 4px;" />
+            
+          <div style="margin-top: 8px;">
+            
+            <h4 style="margin: 0px;">{{aboutData.firstName}} {{aboutData.lastName}}</h4>
+            <p style="font-size: 12px;">{{aboutData.company.title}}</p>
+          </div>      
+        </div>
+        
+        <p style="margin: 0px;">Age - {{aboutData.age}}</p>
+        <p style="margin: 0px;">City - {{aboutData.address.city}}</p>
+        
+        <p>{{aboutData.email}}</p>
+        <div class="go-corner">
+          <div class="go-arrow">→</div>
+        </div>
+      </div>
+
+
+      <!-- <div style="display: flex;align-items: center;justify-content: center;flex-direction: column; width: 260px; height: 250px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; background-color: #fff; padding-top:10px ;">
+        <img [src]="aboutData.image" alt="Image" style="width: auto; height: 110px;" />
+        <div style="padding: 10px;">
+          <h5 style="font-size: 14px; margin: 0;">{{ aboutData.title }}</h5>
+        </div>
+      </div> -->
+
+
+
+      <!-- <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ aboutData.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{aboutData.category}}</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="card">
+      <h2>CARD</h2>
+      <img [src]="aboutData.image" alt="Image" style="width: auto; height: 110px; z-index: 5; border-radius: 90px;" />
+
+  </div> -->
+
+  
+  </div>
+</div>

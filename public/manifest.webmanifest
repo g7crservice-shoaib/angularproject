@@ -1,0 +1,12 @@
+{
+  "name": "MyApp",
+  "short_name": "MyApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "description": "An amazing Angular application.",
+  "icons": [
+   
+  ]
+}
